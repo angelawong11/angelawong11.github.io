@@ -39,7 +39,7 @@ svg.append("text")
             .style("text-anchor", "middle")
             .text("311 Service Requests");
 
-d3.csv("/data/neigh_311.csv", function(d, i, columns) {
+d3.csv("neigh_311.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) {
     t += d[columns[i]] = +d[columns[i]];
   }
